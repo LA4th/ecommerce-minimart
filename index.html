@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MiniMart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <title>Minimart</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>MiniMart</h1>
-    <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
-  </header>
-
-  <main>
-    <div id="products" class="product-grid"></div>
-  </main>
-
-  <aside id="cart">
-    <h2>Your Cart</h2>
-    <ul id="cart-items"></ul>
-    <p>Total: $<span id="total">0.00</span></p>
-  </aside>
-
-  <script src="script.js"></script>
+  <div class="header-container">
+    <div class="logo-container">MiniMart</div>
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search">
+    </div>
+    <div class="cart-container">
+      <div class="count-cart">0</div>
+    </div>
+  </div>
 </body>
 </html>
