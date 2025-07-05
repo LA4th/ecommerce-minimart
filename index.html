@@ -1,57 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
   <title>Minimart</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="header-container">
-    <div class="logo-container">MiniMart</div>
-    <div class="search-container">
-      <input type="text" id="search-bar" placeholder="Search">
-    </div>
-    <div class="cart-container">
-      <div class="count-cart">0</div>
-    </div>
-  </div>
-  <div class="items-container">
-    <div class="card-container">
-      <div class="card">
-        <div class="picture-container"></div>
-        <div class="name-item-container"></div>
-        <div class="stocks-container"></div>
-        <div class="price-container"></div>
-        <div class="btn-container">
-        <input type="button">Add Cart
-        </div>
+  <!-- HEADER SECTION -->
+  <div class="header">
+    <div class="header-container">
+      <div class="logo-container">MiniMart</div>
+      <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search" />
+      </div>
+      <div class="cart-container">
+        <div class="count-cart">0</div>
       </div>
     </div>
   </div>
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  <title>Minimart</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="header-container">
-    <div class="logo-container">MiniMart</div>
-    <div class="search-container">
-      <input type="text" id="search-bar" placeholder="Search">
-    </div>
-    <div class="cart-container">
-      <div class="count-cart">0</div>
+  <!-- CONTAINER SECTION -->
+  <div class="body-container">
+    <div class="card-container">
+      <div class="card">
+        <img src="https://th.bing.com/th?id=OIF.%2bY9KHNp4ziwNeD4nq9AW2g&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Coffee_in_Table" />
+        <div id="items-name">Coffee</div>
+        <h5>Stocks: 200</h5>
+        <h5>Price: $30</h5>
+        <input type="button" value="Add to Cart">
+      </div>
     </div>
   </div>
 </body>

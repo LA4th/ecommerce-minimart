@@ -8,13 +8,19 @@ body {
   background-color: #f5f5f5;
   font-family: 'Courier New', Courier, monospace;
 }
-.header-container {
+/* HEADER SECTION */
+.header, .header-container {
   background-color: black;
+}
+.header-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
+  flex-wrap: wrap;
 }
 .logo-container {
   font-family: "Alfa Slab One", serif;
@@ -26,10 +32,21 @@ body {
   border-bottom: 2px solid white;
 }
 #search-bar {
-  width: 900px;
+  width: 400px;
   height: 25px;
   border-radius: 20px;
   border-color: none;
   padding: 0 10px;
 }
-
+/* CONTAINER SECTION */
+.body-container {
+  width: 950px;
+  margin: auto;
+}
+.card {
+  width: 225px;
+}
+img {
+  width: 100%;
+  
+}
