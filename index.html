@@ -18,7 +18,7 @@
         <input type="text" id="search-bar" placeholder="Search" />
       </div>
       <div class="cart-container">
-        <div class="count-cart">0</div>
+        <div id="count-cart">0</div>
       </div>
     </div>
   </div>
@@ -28,11 +28,13 @@
       <div class="card">
         <img src="https://th.bing.com/th?id=OIF.%2bY9KHNp4ziwNeD4nq9AW2g&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Coffee_in_Table" />
         <div id="items-name">Coffee</div>
-        <h5>Stocks: 200</h5>
-        <h5>Price: $30</h5>
-        <input type="button" value="Add to Cart">
+        <h5 id="stocks">Stocks: 200</h5>
+        <h5 id="prices">Price: $30</h5>
+        <input type="button" value="Add to Cart" onclick="addCartFunction()">
       </div>
     </div>
   </div>
+  <!-- SCRIPT SECTION -->
+  <script src="script.js"></script>
 </body>
 </html>
