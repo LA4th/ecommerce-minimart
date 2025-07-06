@@ -1,13 +1,15 @@
 *, *::after, *::before {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 2px solid red; */
+  /* Remove after debugging: */
+  border: 2px solid red;
 }
 body {
-  box-sizing: border-box;
   background-color: #f5f5f5;
   font-family: 'Courier New', Courier, monospace;
 }
+
 /* HEADER SECTION */
 .header, .header-container {
   background-color: black;
@@ -21,29 +23,46 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 10px 15px;
+  gap: 10px;
 }
 .logo-container {
   font-family: "Alfa Slab One", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 60px;
+  font-size: 50px;
 }
 .cart-container {
-  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid white;
+  padding: 5px;
+}
+#cart-count {
+  font-size: 18px;
 }
 #search-bar {
-  width: 400px;
-  height: 25px;
+  width: 100%;
+  max-width: 400px;
+  height: 30px;
   border-radius: 20px;
-  border-color: none;
+  border: none;
   padding: 0 10px;
 }
+
 /* CONTAINER SECTION */
 .body-container {
-  width: 950px;
-  margin: auto;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
   padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* <== Center items */
+  gap: 15px;
 }
+
 .card-container, .card {
   max-width: 225px;
 }
@@ -78,4 +97,35 @@ img {
   width: 100%;
   margin-top: 3px;
   font-weight: 900;
+}
+
+/*================ 
+  RESPONSIVE SECTION  
+================*/
+
+/* PHONE VIEW */
+@media (max-width: 450px) {
+  .logo-container {
+    font-size: 60px;
+    text-align: center;
+  }
+  #search-bar {
+    border-radius: 0;
+    height: 40px;
+  }
+  .header-container {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: 15px;
+  }
+  .body-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    text-align: center;
+  }
+  .cart-container {
+    justify-content: center;
+  }
 }
