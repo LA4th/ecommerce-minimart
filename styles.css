@@ -1,7 +1,7 @@
 *, *::after, *::before {
   margin: 0;
   padding: 0;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 body {
   box-sizing: border-box;
@@ -42,11 +42,40 @@ body {
 .body-container {
   width: 950px;
   margin: auto;
+  padding-top: 10px;
+}
+.card-container, .card {
+  max-width: 225px;
 }
 .card {
-  width: 225px;
+  margin-top: 0;
+  padding: 0 5px 2px 5px;
+  /* border: 2px solid black; */
+  /* border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black; */
 }
 img {
   width: 100%;
-  
+  padding-bottom: 0;
+  margin-bottom: 0;
+  /* border-bottom: 2px solid black; */
+}
+#items-name, .stocks-container, .prices-container {
+  font-family: "Roboto", sans-serif;
+}
+#items-name {
+  font-weight: bolder;
+  font-size: 25px;
+}
+.stocks-container, .prices-container {
+  font-size: 13px;
+}
+.addCart-btn {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  margin-top: 3px;
+  font-weight: 900;
 }

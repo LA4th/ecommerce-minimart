@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!---->
+  <link rel="icon" type="image/x-icon" href="./icon/3309334_cryptocurrency_darknet_monero_xmr_m_icon.svg" />
   <title>Minimart</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -25,13 +29,13 @@
   <!-- CONTAINER SECTION -->
   <div class="body-container">
     <div class="card-container">
+      <img src="https://th.bing.com/th?id=OIF.%2bY9KHNp4ziwNeD4nq9AW2g&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Coffee_in_Table" />
       <div class="card">
-        <img src="https://th.bing.com/th?id=OIF.%2bY9KHNp4ziwNeD4nq9AW2g&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Coffee_in_Table" />
         <div id="items-name">Coffee</div>
-        <h5 id="stocks">Stocks: 200</h5>
-        <h5 id="prices">Price: $30</h5>
-        <input type="button" value="Add to Cart" onclick="addCartFunction()">
+        <div class="stocks-container">Stocks: <span id="stocks-count">200</span></div>
+        <div class="prices-container">Price: <span id="prices-count">$30</span></div>
       </div>
+      <input class="addCart-btn" type="button" value="Add to Cart" onclick="addCartFunction()">
     </div>
   </div>
   <!-- SCRIPT SECTION -->
