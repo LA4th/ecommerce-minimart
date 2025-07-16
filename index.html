@@ -5,13 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link rel="stylesheet" href="./styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap" rel="stylesheet">
   <title>MiniMart</title>
 </head>
 <body>
-  
+  <nav>
+    <div class="nav-container">
+      <div id="logo">MiniMart</div>
+      <input id="searchBar" type="search" placeholder="Search..." />
+      <button id="btnCart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="addCartCount">0</span>
+      </button>
+    </div>
+    <div class="side-bar-container">
+      <h3>Your Cart</h3>
+      <i class="fa-solid fa-xmark"></i>
+      <div class="items-container">
+        <img src="#" alt="#" />
+        <div class="items-info">
+          <div id="itemsInfoName">Cookie</div>
+          <div id="itemsInfoPrice">Price: $200</div>
+          <div id="itemsInfoStocks">Stocks: 200</div>
+          <div class="incriment-container">
+            <button id="btnDecrement">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <input id="countIncrement" type="text" />
+            <button id="btnIncrement">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <button>
+            <i class="fa-solid fa-trash"></i>
+            <span>Remove</span>
+          </button>
+        </div>  
+      </div>
+    </div>
+  </nav>
   <!-- ! SCRIPT SECTION !-->
   <script src="./script.js"></script>
 </body>
