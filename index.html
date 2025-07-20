@@ -14,55 +14,64 @@
       <div id="logo">MiniMart</div>
       <input id="searchBar" type="search" placeholder="Search..." />
       <button id="btnCart" type="button" aria-label="Open cart">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <span id="addCartCount">0</span>
+        <i class="fa-solid fa-cart-shopping"></i>0
       </button>
     </div>
-  </nav>
-
-  <!-- Main Content -->
-  <main>
     <!-- Sidebar / Cart -->
-    <aside class="side-bar-container" aria-label="Shopping cart">
+    <aside class="side-bar-container hidden" aria-label="Shopping cart">
       <div class="side-bar-header">
         <h3>Your Cart</h3>
         <button id="btnClose" type="button" aria-label="Close sidebar">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
-
       <!-- Cart Item -->
       <article class="items-container">
-        <img id="items-picture" src="https://static.vecteezy.com/system/resources/previews/030/684/278/large_2x/cookies-2d-vector-illustration-cartoon-in-white-background-free-photo.jpg" alt="A photo of cookies" />
-        <div class="items-info">
-          <div class="item-info-name">Cookie</div>
-          <div class="item-info-price">Price: $200</div>
-          <div class="item-info-stocks">Stocks: 200</div>
-          <div class="incriment-container">
-            <button id="btnDecrement" type="button" aria-label="Decrease quantity">
-              <i class="fa-solid fa-minus"></i>
-            </button>
-            <input id="countIncrement" type="number" placeholder="0" />
-            <button id="btnIncrement" type="button" aria-label="Increase quantity">
-              <i class="fa-solid fa-plus"></i>
+        <!-- First item -->
+        <div class="items-container-add">
+          <img id="items-picture" src="https://static.vecteezy.com/system/resources/previews/030/684/278/large_2x/cookies-2d-vector-illustration-cartoon-in-white-background-free-photo.jpg" alt="A photo of cookies" />
+          <div class="items-info">
+            <div class="item-info-name">Cookies</div>
+            <div class="item-info-price">Price: $200</div>
+            <div class="item-info-stocks">Stocks: 200</div>
+            <div class="incriment-container">
+              <button id="btnDecrement" type="button" aria-label="Decrease quantity">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <input id="countIncrement" type="number" placeholder="0" />
+              <button id="btnIncrement" type="button" aria-label="Increase quantity">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <button id="btnRemove" type="button" aria-label="Remove item">
+              <i class="fa-solid fa-trash"></i>
+              <span>Remove</span>
             </button>
           </div>
-          <button id="btnRemove" type="button" aria-label="Remove item">
-            <i class="fa-solid fa-trash"></i>
-            <span>Remove</span>
-          </button>
         </div>
       </article>
-
       <!-- Cart Summary -->
       <div class="side-bar-pay-container">
         <div id="numberItems">Number of Items: 5</div>
         <div id="totalPrice">Total: $200</div>
         <button id="btnPay" type="button">PAY</button>
       </div>
+        </div>
+        
     </aside>
+  </nav>
+  <!-- Main Content -->
+  <main>
+      <div class="card-container">
+        <img class="card-items-img" src="https://static.vecteezy.com/system/resources/previews/030/684/278/large_2x/cookies-2d-vector-illustration-cartoon-in-white-background-free-photo.jpg" alt="A photo of cookies" />
+        <div class="card-items-info">
+          <div class="card-items-name">Cookies</div>
+          <div class="card-items-price">Price: $200</div>
+          <div class="card-items-stocks">Stocks: 200</div>
+          <button id="btnAddCart" type="button">Add to Cart</button>
+        </div>
+      </div>
   </main>
-
   <!-- Script -->
   <script src="./script.js"></script>
 </body>
