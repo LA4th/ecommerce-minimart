@@ -14,6 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 1px solid red;*/
 }
 
 body {
@@ -74,7 +75,7 @@ nav, .nav-container {
   right: 0;
   top: 70px;
   width: 295px;
-  height: calc(100vh - 70px);
+  height: calc(80vh - 70px);
   background: var(--bg-dark);
   color: var(--text-light);
   display: flex;
@@ -100,6 +101,7 @@ nav, .nav-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: 100%;
 }
 .items-container-add {
   display: flex;
@@ -153,6 +155,9 @@ nav, .nav-container {
   text-align: center;
   margin-top: 3px;
   padding: 3px 0;
+}
+.hidden {
+  display: none;
 }
 
 /* Summary */
