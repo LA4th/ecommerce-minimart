@@ -14,7 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red;*/
+  border: 1px solid red;
 }
 
 body {
@@ -177,10 +177,13 @@ nav, .nav-container {
 }
 
 /* Main Section */
-main {
+main, .container {
   width: 900px;
   margin: auto;
   padding: 20px 10px;
+}
+.container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
