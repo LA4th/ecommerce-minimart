@@ -14,7 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -54,7 +54,7 @@ nav, .nav-container {
 }
 #searchBar {
   width: 400px;
-  padding: 8px 10px;
+  padding: 6px 10px;
   border: none;
   border-radius: 4px;
 }
@@ -181,6 +181,13 @@ main, .container {
   width: 900px;
   margin: auto;
   padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  border-top: 5px solid var(--bg-dark);
+  border-bottom: 5px solid var(--bg-dark);
+  padding: 0 5px;
 }
 .container {
   width: 100%;
