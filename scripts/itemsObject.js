@@ -79,7 +79,7 @@ export const marketItems = {
           "image": "./assets/image-energydrink.jpg"
         }
       ],
-      "medecines": [
+      "medicines": [
         {
           "name": "Paracetamol (Tablet)",
           "price": 2,
