@@ -157,7 +157,7 @@ nav, .nav-container {
   padding: 3px 0;
 }
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* Summary */
@@ -213,6 +213,11 @@ h1 {
   flex-direction: column;
   gap: 5px;
   font-size: 0.9rem;
+}
+.card-items-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 #btnAddCart {
   margin-top: 5px;

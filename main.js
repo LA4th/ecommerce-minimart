@@ -1,9 +1,10 @@
 import { eventListeners } from "./scripts/eventListener.js";
 import { renderItems } from "./scripts/renderItems.js";
+import { searchBarFilter } from "./scripts/searchBarFilter.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  /* console.log("✅ DOM fully loaded"); // Test Log */
   eventListeners();
   renderItems();
+  searchBarFilter();
 });

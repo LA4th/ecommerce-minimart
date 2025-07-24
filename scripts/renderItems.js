@@ -4,6 +4,7 @@ const foodRender = (foodSection, foods) => {
   foods.forEach(food => {
     const card = document.createElement("div");
     card.classList.add("card-container");
+    card.setAttribute("data-name", food.name.toLowerCase());
 
     card.innerHTML = `
     <img class="card-items-img" src="${food.image}" alt="${food.name}" />
@@ -22,6 +23,7 @@ const drinkRender = (drinkSection, drinks) => {
   drinks.forEach(drink => {
     const card = document.createElement("div");
     card.classList.add("card-container");
+    card.setAttribute("data-name", drink.name.toLowerCase());
 
     card.innerHTML = `
     <img class="card-items-img" src="${drink.image}" alt="${drink.name}" />
@@ -40,6 +42,7 @@ const personalCareRender = (personalCareSection, personalCares) => {
   personalCares.forEach(personalCare => {
     const card = document.createElement("div");
     card.classList.add("card-container");
+    card.setAttribute("data-name", personalCare.name.toLowerCase());
 
     card.innerHTML = `
     <img class="card-items-img" src="${personalCare.image}" alt="${personalCare.name}" />
@@ -58,6 +61,7 @@ const medicineRender = (medicineSection, medicines) => {
   medicines.forEach(medicine => {
     const card = document.createElement("div");
     card.classList.add("card-container");
+    card.setAttribute("data-name", medicine.name.toLowerCase());
 
     card.innerHTML = `
     <img class="card-items-img" src="${medicine.image}" alt="${medicine.name}" />
@@ -73,18 +77,22 @@ const medicineRender = (medicineSection, medicines) => {
 };
 
 export const renderItems = () => {
-  const foodSection = document.querySelector("#foodSection .container");
-  const drinkSection = document.querySelector("#drinkSection .container");
-  const personalCareSection = document.querySelector("#personalCareSection .container");
-  const medicineSection = document.querySelector("#medicineSection .container");
+  return new Promise(resolve => {
+    const foodSection = document.querySelector("#foodSection .container");
+    const drinkSection = document.querySelector("#drinkSection .container");
+    const personalCareSection = document.querySelector("#personalCareSection .container");
+    const medicineSection = document.querySelector("#medicineSection .container");
 
-  const foods = marketItems.items[0].foods;
-  const drinks = marketItems.items[0].drinks;
-  const personalCares = marketItems.items[0].personalCares;
-  const medicines = marketItems.items[0].medicines;
+    const foods = marketItems.items[0].foods;
+    const drinks = marketItems.items[0].drinks;
+    const personalCares = marketItems.items[0].personalCares;
+    const medicines = marketItems.items[0].medicines;
 
-  foodRender(foodSection, foods);
-  drinkRender(drinkSection, drinks);
-  personalCareRender(personalCareSection, personalCares);
-  medicineRender(medicineSection, medicines);
+    foodRender(foodSection, foods);
+    drinkRender(drinkSection, drinks);
+    personalCareRender(personalCareSection, personalCares);
+    medicineRender(medicineSection, medicines);
+
+    resolve(); // Tell main.js it's done
+  });
 };
