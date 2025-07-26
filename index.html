@@ -27,33 +27,15 @@
       </div>
       <!-- Cart Item -->
       <article class="items-container">
-        <!-- First item -->
+        
         <div class="items-container-add">
-          <img id="items-picture" src="https://static.vecteezy.com/system/resources/previews/030/684/278/large_2x/cookies-2d-vector-illustration-cartoon-in-white-background-free-photo.jpg" alt="A photo of cookies" />
-          <div class="items-info">
-            <div class="item-info-name">Cookies</div>
-            <div class="item-info-price">Price: $200</div>
-            <div class="item-info-stocks">Stocks: 200</div>
-            <div class="incriment-container">
-              <button id="btnDecrement" type="button" aria-label="Decrease quantity">
-                <i class="fa-solid fa-minus"></i>
-              </button>
-              <input id="countIncrement" type="number" placeholder="0" />
-              <button id="btnIncrement" type="button" aria-label="Increase quantity">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-            </div>
-            <button id="btnRemove" type="button" aria-label="Remove item">
-              <i class="fa-solid fa-trash"></i>
-              <span>Remove</span>
-            </button>
-          </div>
+          <!-- INJECT THE cartHandel Script -->
         </div>
       </article>
       <!-- Cart Summary -->
       <div class="side-bar-pay-container">
-        <div id="numberItems">Number of Items: 5</div>
-        <div id="totalPrice">Total: $200</div>
+        <div id="numberItems">Number of Items: 0</div>
+        <div id="totalPrice">Total: 0</div>
         <button id="btnPay" type="button">PAY</button>
       </div>
         </div>
@@ -87,6 +69,17 @@
       </div>
     </section>
   </main>
+  <div class="loading-container hidden" id="loadingScreen">
+    <div class="loader">
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+      <div class="loader--dot"></div>
+    </div>
+    <div class="loader--text">Processing Payment...</div>
+  </div>
   <!-- <footer></footer> -->
   <!-- Script -->
   <script type="module" src="./main.js"></script>
