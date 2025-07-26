@@ -13,9 +13,9 @@ export const eventListeners = () => {
     isCartPinnedOpen = !isCartPinnedOpen;
     if(isCartPinnedOpen) {
       sideBar.classList.remove("hidden");
-    } /* else {
+    } else {
       sideBar.classList.add("hidden");
-    } */
+    }
   });
 
   buttonClose.addEventListener("click", () => {

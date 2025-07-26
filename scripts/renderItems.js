@@ -77,22 +77,18 @@ const medicineRender = (medicineSection, medicines) => {
 };
 
 export const renderItems = () => {
-  return new Promise(resolve => {
-    const foodSection = document.querySelector("#foodSection .container");
-    const drinkSection = document.querySelector("#drinkSection .container");
-    const personalCareSection = document.querySelector("#personalCareSection .container");
-    const medicineSection = document.querySelector("#medicineSection .container");
+  const foodSection = document.querySelector("#foodSection .container");
+  const drinkSection = document.querySelector("#drinkSection .container");
+  const personalCareSection = document.querySelector("#personalCareSection .container");
+  const medicineSection = document.querySelector("#medicineSection .container");
 
-    const foods = marketItems.items[0].foods;
-    const drinks = marketItems.items[0].drinks;
-    const personalCares = marketItems.items[0].personalCares;
-    const medicines = marketItems.items[0].medicines;
+  const foods = marketItems.items[0].foods;
+  const drinks = marketItems.items[0].drinks;
+  const personalCares = marketItems.items[0].personalCares;
+  const medicines = marketItems.items[0].medicines;
 
-    foodRender(foodSection, foods);
-    drinkRender(drinkSection, drinks);
-    personalCareRender(personalCareSection, personalCares);
-    medicineRender(medicineSection, medicines);
-
-    resolve(); // Tell main.js it's done
-  });
+  foodRender(foodSection, foods);
+  drinkRender(drinkSection, drinks);
+  personalCareRender(personalCareSection, personalCares);
+  medicineRender(medicineSection, medicines);
 };
